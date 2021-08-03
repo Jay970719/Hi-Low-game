@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+    <script src="https://kit.fontawesome.com/336de93654.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="hi-lo.css" type="text/css">
+    <title>Hi-Lo Game</title>
+    <script src="hi-lo.js" type="text/javaScript"></script>
+  </head>
+  
+  <body onload="randomNum()">
+    <div class="mainContainer" id="mainContainer">
+      <div class="vCenter">
+        <h1 style="font-size: 71px;">Hi-Lo</h1>
+        <br/>
+        <div class="theIcon">
+          <i class="fas fa-question" id="theIcon"></i>
+        </div>
+        <br/>
+        <div class="theGuessing" id="theGuessing">
+          <h1 id="message">Choose a number between 1 and 100</h1><br>
+          <input type="text" id="numInput" class="numInput" /><br><br>
+          <input type="button" value="Make Your Guess!" onclick="guessNum()" class="guessButton" id="guessButton">
+        </div>
+        <div id="congo" style="display: none;">
+          <br>
+          <h1 style="font-size: 71px;" id="correctNum"></h1><br/>
+          <h1>🎉Congratulations! You guessed correct number✌️</h1>
+        </div>
+        <br>
+        <p>Number of guesses: <b id="counter"></b></p>
+      </div>
+    </div>
+  </body>
